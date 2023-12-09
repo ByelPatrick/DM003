@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(Logo\ Fox\ Games.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            backdrop-filter: blur(10px);
+            animation: example2 10s infinite;
+            font-size:600%;
+        }
+       
+        .qtq1{
+            animation: example 10s infinite;
+            position: relative;
+            
+        }
+        @keyframes example {
+            0%   {color:#EB1C24; left: 0; top: 0; bottom: 100%; right: 0;}
+            25%  {color: #111A29; left: 20%; top: 20%; bottom: 20%; right: 0%;}
+            50%{color:#BD1A2F; top:50%; left: 0; bottom: 50%; right: 100%;}
+            75%  {color: #A0B4D5; left: -21%; top: 20%; bottom: 20%; right: 100%;}
+            100% {color:#EB1C24; top: 0; left: 0; bottom: 0; right: 0;}
+        }
+        @keyframes example2{
+            0%{background-color: #A0B4D5;}
+            25%{background-color: #BD1A2F;}
+            50%{background-color: #111A29;}
+            75%{background-color: #EB1C24;}
+            100%{background-color: #A0B4D5;}
+        }
+        button{
+            position: absolute;
+            bottom: 3rem;
+            width: 10em;
+            height: 3em;
+            border: 0;
+            border-radius: 10px;
+
+        }
+        button:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    </style>
+    
+    <title>Error 404</title>
+</head>
+<body>
+    <h1 class="qtq1">404</h1>
+    <p class="qtq1">Error 404: Page Not Found</p>
+
+    <a href="#"><button>Now Refresh</button></a>
+    
+</body>
+</html>
